@@ -1,17 +1,17 @@
-import 'package:anonymous_methods/modules/home/presentation/home_page.dart';
+import 'package:anonymous_methods/features/user/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
     switch (settings.name) {
 
-      //Home
-      case '/home':
+      //Login:
+      case '/Login':
         return MaterialPageRoute(
-          builder: (context) => const Home(),
+          builder: (context) => const LoginPage(),
         );
 
-      //oi
+      //
     }
   }
 }
